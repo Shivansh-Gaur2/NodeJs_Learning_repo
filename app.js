@@ -10,7 +10,11 @@ const http = require('http');
 // rqListener is a function which will be executed when any request is 
 //recieved by the server
 
-const server = http.createServer((req, res) => {console.log(req)});
+const server = http.createServer((req, res) => {
+    console.log(req);
+// process.exit() this is used to exit the event loop
+
+});
 // this returns a server
 
 server.listen(3000);
